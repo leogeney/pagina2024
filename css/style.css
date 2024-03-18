@@ -9,11 +9,11 @@
 }
 :root{
 
-    --color_text-primary:#309c13;
-    --color_text-secundary: #101e2c;
-    --color_text-tertiary:#152404;
-    --main_color-primary:#155404;
-    --main_color-secundary:#8ada7a;
+    --color_text-primary:#c8c4c5;
+    --color_text-secundary: #fffcfc;
+    --color_text-tertiary:#a8a1a8;
+    --main_color-primary:#afafaf;
+    --main_color-secundary:#211b20;
     --background-color:#fafbfe;
     --lowText_font_size:19px;
     --text-size-title:40px;
@@ -178,5 +178,5 @@ header{
 
    }
    .image__cover img{
-    width: 550px;
+    width: 650px;
    }
