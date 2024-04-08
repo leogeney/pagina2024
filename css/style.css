@@ -6,15 +6,19 @@
     font-family: "Poppins", sans-serif;
     box-sizing: border-box;
     text-decoration: none;
+    
 }
 :root{
 
     --color_text-primary:#c8c4c5;
     --color_text-secundary: #fffcfc;
     --color_text-tertiary:#a8a1a8;
+    --color_text-cuartiary:#575757;
     --main_color-primary:#afafaf;
     --main_color-secundary:#211b20;
     --background-color:#fafbfe;
+    --main_color-tertiary:rgb(51, 50, 50);
+    
     --lowText_font_size:19px;
     --text-size-title:40px;
     --text-tittle_card:24px;
@@ -119,6 +123,14 @@ header{
     padding-bottom: 100px;
     background-color: var(--main_color-secundary);
 }
+.container__cover2 {
+
+    background-color: var(--main_color-tertiary);
+    color: var();
+    padding-top: 100px;
+    padding-bottom: 100px;
+    
+}
 
 .cover{
     max-width: 1200px;
@@ -175,8 +187,93 @@ header{
    .image__cover{
 
     width: 100%;
+    display: flex;
 
    }
    .image__cover img{
     width: 650px;
+   }
+
+   .container__card-primary{
+    padding-top: 100px;
+    background-color:var(--color_text-cuartiary) ;
+}
+
+.card__primary{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 20px;
+    
+}
+
+.text__card-primary{
+    max-width: 800px;
+    margin: auto;
+}
+
+.text__card-primary p{
+    color: var(--color_text-secundary);
+    letter-spacing: 4px;
+    font-size: var(--text_paragraph);
+    font-weight: 500;
+}
+
+.text__card-primary h1{
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--color_text-primary);
+}
+
+.container__box-cardPrimary{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.box__card-primary{
+    max-width: 350px;
+    padding: 60px 40px;
+    border: 1px solid #525151;
+    border-radius: 20px;
+    margin: 14px;
+    transition: all 300ms;
+}
+
+.box__card-primary:hover{
+    border: 1px solid transparent;
+    box-shadow: var(--box_shadow-primary);
+}
+
+.box__card-primary h2{
+    font-size: 20px;
+    margin-top: 40px;
+    font-weight: 600;
+    color: var(--color_text-secundary);
+}
+
+.box__card-primary p{
+    margin-top: 20px;
+}
+
+
+.image__cover2{
+
+    
+    display: flex;
+    
+
+   }
+   .image__cover2 img{
+
+    width: 250px;
+    height: 250px;
+    border-radius: 50px ;
+    
+   }
+
+   #img2{
+
+    margin-left: 30px;
    }
