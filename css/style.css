@@ -113,8 +113,7 @@ header{
     color: #fafbfe;
 }
 #red:hover{
-transition: all 1s;
-text-shadow: 0px 2px 5px rgba(255, 255, 255, 0.616);
+    color: #afafaf;
 
 }
 .menu .socialMedia a{
@@ -199,7 +198,7 @@ text-shadow: 0px 2px 5px rgba(255, 255, 255, 0.616);
 
    }
    .image__cover img{
-    width: 650px;
+    width: 550px;
    }
 
    .container__card-primary{
@@ -358,7 +357,7 @@ margin-top: 20px;
 
     font-size:50px;
     font-size: 60px;
-    background: linear-gradient(to right, #ff0a33, #e25e12, #f5d000);
+    background: linear-gradient(to right, #bebb00, #cedd02, #e6ff02);
     background-size: cover;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -395,20 +394,22 @@ margin-top: 20px;
 
     max-width: 350px;
     padding: 60px 40px;
-    
+    color: white;
     border-radius: 20px;
     margin: 14px;
     transition: all 300ms;
     background-size: cover;
-    box-shadow: 0px -35px 66px 0px rgba(0,0,0,0.74) inset;
+    box-shadow: 0px -35px 66px 0px rgb(0, 0, 0) inset;
     -webkit-box-shadow: 0px -35px 66px 0px rgba(0,0,0,0.74) inset;
     -moz-box-shadow: 0px -35px 66px 0px rgba(0,0,0,0.74) inset;
+    background-color: #211b20;
 }
-
+.atras{
+    background-color: #57575798;
+}
 .box__card-primary2:hover{
-    color: white;
-    max-width: 360px;
-    padding: 60px 40px;
+   
+    
     box-shadow: 0px 2px 11px 0px rgba(255,255,255,0.69);
     -webkit-box-shadow: 0px 2px 11px 0px rgba(255,255,255,0.69);
     -moz-box-shadow: 0px 2px 11px 0px rgba(255,255,255,0.69);
@@ -416,26 +417,25 @@ margin-top: 20px;
 }
 #foto1{
     
-   
-    background: url(https://www.publicdomainpictures.net/pictures/200000/velka/green-background-1480062887P1D.jpg);
+   background: url(https://media.revistagq.com/photos/62a3154cf039ed5e0377efa3/16:9/w_2560%2Cc_limit/lennart-uecker-49bZDF_EgJU-unsplash.jpg);
 }
 #foto2{
    
-background: url(https://www.gratistodo.com/wp-content/uploads/2021/12/Fondos-rojos-7.jpg);
+background: url(https://www.kicksonfire.com/wp-content/uploads/2021/07/Nike-Dunk-Low-SE-Camo-3.jpg?x58464);
 }
 #foto3{
     
-    background: url(https://wallpapers.com/images/hd/vintage-orange-background-sowhvxuohohkjkl2.jpg);
+    background: url(https://media.revistagq.com/photos/62a3154cf039ed5e0377efa3/16:9/w_2560%2Cc_limit/lennart-uecker-49bZDF_EgJU-unsplash.jpg);
 }
 #foto4{
     
     background: url(https://www.kicksonfire.com/wp-content/uploads/2021/07/Nike-Dunk-Low-SE-Camo-3.jpg?x58464);
 }
 #foto5{
-    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtnXp2r0wrCg7Fh-eelbDazNSOmmqw6hQufg2wFS8_xH0XyHZXDbTpfQ6dUlwHPIkAQkQ&usqp=CAU) ;
+    background: url(https://media.revistagq.com/photos/62a3154cf039ed5e0377efa3/16:9/w_2560%2Cc_limit/lennart-uecker-49bZDF_EgJU-unsplash.jpg) ;
 }
 #foto6{
-    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtMoPH_aePSZB6XB3QpgD3lTfx-yqcGyftcMmVyO_5uEyTcdQS64iSI1ketKvjGbdLWOk&usqp=CAU);
+    background: url(https://www.kicksonfire.com/wp-content/uploads/2021/07/Nike-Dunk-Low-SE-Camo-3.jpg?x58464);
 }
 
 #arrow{
@@ -458,8 +458,8 @@ background: url(https://www.gratistodo.com/wp-content/uploads/2021/12/Fondos-roj
 }
 .box__card-primary3{
     margin-bottom: -300px;
-    max-width: 350px;
-    min-height: 350px;
+    max-width: 500px;
+    min-height: 0px;
     background-color: #211b2067;
     border-radius: 20px;
     margin: 14px;
@@ -490,4 +490,65 @@ background: url(https://www.gratistodo.com/wp-content/uploads/2021/12/Fondos-roj
 .name{
 
    color: #fafbfe;
+}
+
+.presentacion{
+
+    background-color: #444444;
+    width: 400px;
+    height: 500px;
+    margin-left: 400px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+#fotop{
+    transition: 2s;
+    margin-top: 30px;
+    width: 280px;
+    height: 280px;
+    border-radius: 1000px;
+    border: 10px solid var(--color_text-tertiary);
+}
+
+
+
+.info{
+    margin-top: 10px;
+}
+.info h2{
+
+    font-size: 30px;
+    color: var(--color_text-secundary);
+
+}
+.info p{
+    color: #a8a1a8;
+    margin-top: -10px;
+}
+
+.rsociales{
+    margin-top: 30px;
+   
+    border-top: 2px solid var(--color_text-tertiary);
+    display: flex;
+    justify-content:center;
+    gap: 30px;
+    cursor: pointer;
+}
+.rsociales i:hover{
+    color: var(--main_color-secundary)
+    
+}
+
+.rsociales i{
+    font-size: 30px;
+    margin-top: 15px;
+    color: var(--color_text-secundary);
+    
+    border-radius: 50px;
+}
+#equip{
+    background-color: #3b3b3b;
+    margin-top: -10px;
 }
