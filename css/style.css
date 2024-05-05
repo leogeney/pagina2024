@@ -10,12 +10,12 @@
 }
 :root{
 
-    --color_text-primary:#c8c4c5;
-    --color_text-secundary: #fffcfc;
-    --color_text-tertiary:#a8a1a8;
-    --color_text-cuartiary:#575757;
-    --main_color-primary:#afafaf;
-    --main_color-secundary:#211b20;
+    --color_text-primary:#d1ecff;
+    --color_text-secundary: #ebf7ff;
+    --color_text-tertiary:#35b0ff;
+    --color_text-cuartiary:#0061ff;
+    --main_color-primary:#aedfff;
+    --main_color-secundary:#003aad;
     --background-color:#fafbfe;
     --main_color-tertiary:rgb(51, 50, 50);
     
@@ -80,7 +80,7 @@ header{
     margin: 20px 16px;
 }
 .menu nav ul li a{
-    color:var(--color_text-secundary);
+    color:var(--color_text-tertiary);
     font-size: var(--lowText_font_size);
     position: relative;
 }
@@ -94,13 +94,13 @@ header{
     border: 2px solid var(--color_text-primary);
     border-radius: 8px;
     font-weight: 500;
-    color: var(--color_text-tertiary);
+    color: var(--color_text-primary);
     margin: 0px 20px;
     transition: all 300ms;
     
 }
 .btn_quote:hover{
-    color: white;
+    color: var(--color_text-tertiary);
     background-color: var(--color_text-primary);
 }
 .menu .socialMedia{
@@ -113,7 +113,7 @@ header{
     color: #fafbfe;
 }
 #red:hover{
-    color: #afafaf;
+    color: var(--color_text-tertiary);
 
 }
 .menu .socialMedia a{
@@ -132,8 +132,8 @@ header{
 }
 .container__cover2 {
 
-    background-color: var(--main_color-tertiary);
-    color: var();
+    background-color: var(--color_text-primary);
+    
     padding-top: 100px;
     padding-bottom: 100px;
     
@@ -150,17 +150,23 @@ header{
 
 
 }
+
+#text1{
+    color: var(--color_text-primary);
+}
 .text__cover{
 
     width: 100%;
     padding-right: 150px;
+    color: #0061ff;
 }
 .text__cover h1{
 
     font-size: 50px;
-    color: var(--color_text-secundary);
-
+    
+    color: var(--main_color-secundary);
 }
+
 
 .text__cover p{
 
@@ -170,6 +176,7 @@ header{
     color:var(--color_text-tertiary)
 
 }
+
 .btn__text{
     display: block;
     width: 150px;
@@ -177,19 +184,48 @@ header{
     padding: 10px 20px;
     text-align: center;
     font-weight: 500;
-    background: var(--main_color-primary);
-    color:white;
+    background: var(--color_text-primary);
+    color:#35b0ff;
     border-radius:8px ;
     border: 2px transparent;
     transition: all 300ms;
     cursor: pointer;
 }
 
+#btn__text2:hover{
+    border: 2px solid #0788ff;
+    color: #0788ff ;
+}
+
+
 .btn__text:hover{
 
     background: transparent;
-    border: 2px solid var(--main_color-primary);
-    color: var(--color_text-tertiary);
+    border: 2px solid var(--color_text-primary);
+    color: var(--color_text-primary);
+}
+
+.btn__text2{
+    display: block;
+    width: 150px;
+    margin-top: 40px;
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: 500;
+    background: var(--color_text-cuartiary);
+    color:var(--color_text-primary);
+    border-radius:8px ;
+    border: 2px solid var(--color_text-cuartiary);
+    transition: all 300ms;
+    cursor: pointer;
+}
+
+
+.btn__text2:hover{
+
+    background: transparent;
+    border: 2px solid var(--color_text-primary);
+    color: var(--color_text-primary);
 }
    .image__cover{
 
@@ -202,12 +238,16 @@ header{
    }
 
    .container__card-primary{
+    margin-top: -30px;
     padding-top: 100px;
-    background-color:var(--color_text-cuartiary) ;
+    background-color:var(--color_text-primary) ;
 }
 .container__card-primary1{
     padding-top: 100px;
-    background-color:#333232 ;
+    
+}
+#tarjetas1{
+    background-color: var(--color_text-primary);
 }
 
 .card__primary{
@@ -215,16 +255,19 @@ header{
     margin: auto;
     text-align: center;
     padding: 0px 20px;
+   
     
 }
 
 .text__card-primary{
     max-width: 800px;
     margin: auto;
+    margin-top: -50px;
+  
 }
 
 .text__card-primary p{
-    color: var(--color_text-secundary);
+    color: var(--color_text-cuartiary);
     letter-spacing: 4px;
     font-size: var(--text_paragraph);
     font-weight: 500;
@@ -233,7 +276,7 @@ header{
 .text__card-primary h1{
     font-size: 40px;
     font-weight: 600;
-    color: var(--color_text-primary);
+    color: var(--main_color-secundary);
 }
 
 .container__box-cardPrimary{
@@ -246,15 +289,19 @@ header{
 .box__card-primary{
     max-width: 350px;
     padding: 60px 40px;
-    border: 1px solid #525151;
+    
     border-radius: 20px;
     margin: 14px;
     transition: all 300ms;
     background-size: cover;
+    box-shadow: 0px 0px 17px -8px rgba(0,0,0,0.61);
+    -webkit-box-shadow: 0px 0px 17px -8px rgba(0,0,0,0.61);
+    -moz-box-shadow: 0px 0px 17px -8px rgba(0,0,0,0.61);
+    
 }
 
 .box__card-primary:hover{
-    border: 1px solid transparent;
+    
     box-shadow: var(--box_shadow-primary);
 }
 
@@ -262,11 +309,20 @@ header{
     font-size: 20px;
     margin-top: 40px;
     font-weight: 600;
-    color: var(--color_text-secundary);
+    color: var(--main_color-secundary);
+}
+#cartah{
+
+    box-shadow: none;
+    background-color: none;
+}
+#cartah{
+    box-shadow: var(--box_shadow-primary);
 }
 
 .box__card-primary p{
     margin-top: 20px;
+    color:   var(--color_text-cuartiary);
 }
 
 
@@ -288,16 +344,10 @@ header{
    #img2{
 
     margin-left: 30px;
+   
    }
 
-   .Quehacemos{
-    background-color: rgb(219, 213, 213);
-    height: 1000px;
-
-
-
-   }
-
+   
 
    .titulo{
 
@@ -357,7 +407,7 @@ margin-top: 20px;
 
     font-size:50px;
     font-size: 60px;
-    background: linear-gradient(to right, #bebb00, #cedd02, #e6ff02);
+    background-color:var(--color_text-cuartiary);
     background-size: cover;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -366,7 +416,7 @@ margin-top: 20px;
 
 
 .galeria{
-    background-color: #525151;
+    background-color: var(--color_text-cuartiary);
     
     height: 800px;
 }
@@ -393,24 +443,24 @@ margin-top: 20px;
 .box__card-primary2{
 
     max-width: 350px;
-    height: 500px;
+    height: 400px;
     padding: 60px 40px;
     color: white;
     border-radius: 20px;
     margin: 14px;
-    transition: all 300ms;
+    margin-top: -30px;
     background-size: cover;
-    box-shadow: 0px -35px 66px 0px rgb(0, 0, 0) inset;
-    -webkit-box-shadow: 0px -35px 66px 0px rgba(0,0,0,0.74) inset;
-    -moz-box-shadow: 0px -35px 66px 0px rgba(0,0,0,0.74) inset;
-    background-color: #211b20;
+    box-shadow: 13px 0px 97px 20px rgba(0,59,215,0.76) inset;
+-webkit-box-shadow: 13px 0px 97px 20px rgba(0,59,215,0.76) inset;
+-moz-box-shadow: 13px 0px 97px 20px rgba(0,59,215,0.76) inset;
+
 }
 .atras{
-    background-color: #57575798;
+    background-color: #003aad62;
 }
 .box__card-primary2:hover{
    
-    
+    cursor: pointer;
     box-shadow: 0px 2px 11px 0px rgba(255,255,255,0.69);
     -webkit-box-shadow: 0px 2px 11px 0px rgba(255,255,255,0.69);
     -moz-box-shadow: 0px 2px 11px 0px rgba(255,255,255,0.69);
@@ -418,30 +468,29 @@ margin-top: 20px;
 }
 #foto1{
     
-   background: url(https://media.revistagq.com/photos/62a3154cf039ed5e0377efa3/16:9/w_2560%2Cc_limit/lennart-uecker-49bZDF_EgJU-unsplash.jpg);
+  
+    background: url(https://media.revistagq.com/photos/62a3154cf039ed5e0377efa3/16:9/w_2560%2Cc_limit/lennart-uecker-49bZDF_EgJU-unsplash.jpg) ;
+    background-size:cover ;
+    
 }
 #foto2{
    
-background: url(https://www.kicksonfire.com/wp-content/uploads/2021/07/Nike-Dunk-Low-SE-Camo-3.jpg?x58464);
+background: url(https://i.ebayimg.com/images/g/XPQAAOSwQcVjAE--/s-l1600.jpg);
+background-size: cover;
 }
 #foto3{
     
-    background: url(https://media.revistagq.com/photos/62a3154cf039ed5e0377efa3/16:9/w_2560%2Cc_limit/lennart-uecker-49bZDF_EgJU-unsplash.jpg);
+    background: url(https://www.consumidorglobal.com/uploads/s1/12/41/48/una-chica-eligiendo-el-modelo-de-zapatillas-de-nike-que-quiere-comprar-pexels_4_1200x757.jpeg);
+    background-size: cover;
 }
-#foto4{
-    
-    background: url(https://www.kicksonfire.com/wp-content/uploads/2021/07/Nike-Dunk-Low-SE-Camo-3.jpg?x58464);
-}
-#foto5{
-    background: url(https://media.revistagq.com/photos/62a3154cf039ed5e0377efa3/16:9/w_2560%2Cc_limit/lennart-uecker-49bZDF_EgJU-unsplash.jpg) ;
-}
-#foto6{
-    background: url(https://www.kicksonfire.com/wp-content/uploads/2021/07/Nike-Dunk-Low-SE-Camo-3.jpg?x58464);
-}
+
 
 #arrow{
     margin-top: 30px;
-    font-size: 35px;
+    font-size: 30px;
+    color: #afafaf;
+
+
 }
 
 #hacemos{
@@ -495,12 +544,11 @@ background: url(https://www.kicksonfire.com/wp-content/uploads/2021/07/Nike-Dunk
 
 .presentacion{
 
-    background-color: #444444;
+    background-color: var(--color_text-tertiary);
     width: 400px;
     height: 500px;
     margin-left: 400px;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
+    border-radius: 30px;
 }
 
 #fotop{
@@ -509,7 +557,7 @@ background: url(https://www.kicksonfire.com/wp-content/uploads/2021/07/Nike-Dunk
     width: 280px;
     height: 280px;
     border-radius: 1000px;
-    border: 10px solid var(--color_text-tertiary);
+    border: 10px solid var(--main_color-primary);
 }
 
 
@@ -524,14 +572,14 @@ background: url(https://www.kicksonfire.com/wp-content/uploads/2021/07/Nike-Dunk
 
 }
 .info p{
-    color: #a8a1a8;
+    color: var(--main_color-secundary);
     margin-top: -10px;
 }
 
 .rsociales{
     margin-top: 30px;
    
-    border-top: 2px solid var(--color_text-tertiary);
+    border-top: 2px solid var(--main_color-primary);
     display: flex;
     justify-content:center;
     gap: 30px;
@@ -550,6 +598,56 @@ background: url(https://www.kicksonfire.com/wp-content/uploads/2021/07/Nike-Dunk
     border-radius: 50px;
 }
 #equip{
-    background-color: #3b3b3b;
+    background-color:var(--color_text-primary);
     margin-top: -10px;
 }
+
+.ideas{
+    margin-top: 30px;
+    display: flex;
+    gap: 50px;
+    color: #35b0ff;
+}
+
+.formulario{
+    margin-top: 30px;
+
+}
+
+input{
+    border: none;
+    border-bottom: 2px solid #003aad;
+
+    background-color: transparent;
+    width: 300px;
+
+}
+
+.inp2{
+    margin-left: 30px;
+
+}
+
+#button{
+    background-color: #003aad;
+    color: var(--color_text-secundary);
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+
+
+}
+
+#button:hover{
+    border: 2px solid var(--main_color-secundary);
+    background-color: transparent;
+    color: #003aad;
+    transition: 2s all;
+}
+.in{
+    height: 100px;
+    width: 638px;
+}
+
+
